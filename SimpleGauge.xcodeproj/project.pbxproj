@@ -1,0 +1,314 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		342338BA169E39EA008C3A20 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 342338B9169E39EA008C3A20 /* UIKit.framework */; };
+		342338BC169E39EA008C3A20 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 342338BB169E39EA008C3A20 /* Foundation.framework */; };
+		342338BE169E39EA008C3A20 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 342338BD169E39EA008C3A20 /* CoreGraphics.framework */; };
+		342338C4169E39EA008C3A20 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 342338C2169E39EA008C3A20 /* InfoPlist.strings */; };
+		342338C6169E39EA008C3A20 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 342338C5169E39EA008C3A20 /* main.m */; };
+		342338CA169E39EA008C3A20 /* PBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 342338C9169E39EA008C3A20 /* PBAppDelegate.m */; };
+		342338CC169E39EA008C3A20 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 342338CB169E39EA008C3A20 /* Default.png */; };
+		342338CE169E39EA008C3A20 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 342338CD169E39EA008C3A20 /* Default@2x.png */; };
+		342338D0169E39EA008C3A20 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 342338CF169E39EA008C3A20 /* Default-568h@2x.png */; };
+		342338D3169E39EA008C3A20 /* PBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 342338D2169E39EA008C3A20 /* PBViewController.m */; };
+		342338D6169E39EA008C3A20 /* PBViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 342338D4169E39EA008C3A20 /* PBViewController_iPhone.xib */; };
+		342338D9169E39EA008C3A20 /* PBViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 342338D7169E39EA008C3A20 /* PBViewController_iPad.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		342338B5169E39EA008C3A20 /* SimpleGauge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleGauge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		342338B9169E39EA008C3A20 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		342338BB169E39EA008C3A20 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		342338BD169E39EA008C3A20 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		342338C1169E39EA008C3A20 /* SimpleGauge-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SimpleGauge-Info.plist"; sourceTree = "<group>"; };
+		342338C3169E39EA008C3A20 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		342338C5169E39EA008C3A20 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		342338C7169E39EA008C3A20 /* SimpleGauge-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SimpleGauge-Prefix.pch"; sourceTree = "<group>"; };
+		342338C8169E39EA008C3A20 /* PBAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PBAppDelegate.h; sourceTree = "<group>"; };
+		342338C9169E39EA008C3A20 /* PBAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PBAppDelegate.m; sourceTree = "<group>"; };
+		342338CB169E39EA008C3A20 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		342338CD169E39EA008C3A20 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		342338CF169E39EA008C3A20 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		342338D1169E39EA008C3A20 /* PBViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PBViewController.h; sourceTree = "<group>"; };
+		342338D2169E39EA008C3A20 /* PBViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PBViewController.m; sourceTree = "<group>"; };
+		342338D5169E39EA008C3A20 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/PBViewController_iPhone.xib; sourceTree = "<group>"; };
+		342338D8169E39EA008C3A20 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/PBViewController_iPad.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		342338B2169E39EA008C3A20 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				342338BA169E39EA008C3A20 /* UIKit.framework in Frameworks */,
+				342338BC169E39EA008C3A20 /* Foundation.framework in Frameworks */,
+				342338BE169E39EA008C3A20 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		342338AA169E39EA008C3A20 = {
+			isa = PBXGroup;
+			children = (
+				342338BF169E39EA008C3A20 /* SimpleGauge */,
+				342338B8169E39EA008C3A20 /* Frameworks */,
+				342338B6169E39EA008C3A20 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		342338B6169E39EA008C3A20 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				342338B5169E39EA008C3A20 /* SimpleGauge.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		342338B8169E39EA008C3A20 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				342338B9169E39EA008C3A20 /* UIKit.framework */,
+				342338BB169E39EA008C3A20 /* Foundation.framework */,
+				342338BD169E39EA008C3A20 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		342338BF169E39EA008C3A20 /* SimpleGauge */ = {
+			isa = PBXGroup;
+			children = (
+				342338C8169E39EA008C3A20 /* PBAppDelegate.h */,
+				342338C9169E39EA008C3A20 /* PBAppDelegate.m */,
+				342338D1169E39EA008C3A20 /* PBViewController.h */,
+				342338D2169E39EA008C3A20 /* PBViewController.m */,
+				342338D4169E39EA008C3A20 /* PBViewController_iPhone.xib */,
+				342338D7169E39EA008C3A20 /* PBViewController_iPad.xib */,
+				342338C0169E39EA008C3A20 /* Supporting Files */,
+			);
+			path = SimpleGauge;
+			sourceTree = "<group>";
+		};
+		342338C0169E39EA008C3A20 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				342338C1169E39EA008C3A20 /* SimpleGauge-Info.plist */,
+				342338C2169E39EA008C3A20 /* InfoPlist.strings */,
+				342338C5169E39EA008C3A20 /* main.m */,
+				342338C7169E39EA008C3A20 /* SimpleGauge-Prefix.pch */,
+				342338CB169E39EA008C3A20 /* Default.png */,
+				342338CD169E39EA008C3A20 /* Default@2x.png */,
+				342338CF169E39EA008C3A20 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		342338B4169E39EA008C3A20 /* SimpleGauge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 342338DC169E39EA008C3A20 /* Build configuration list for PBXNativeTarget "SimpleGauge" */;
+			buildPhases = (
+				342338B1169E39EA008C3A20 /* Sources */,
+				342338B2169E39EA008C3A20 /* Frameworks */,
+				342338B3169E39EA008C3A20 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SimpleGauge;
+			productName = SimpleGauge;
+			productReference = 342338B5169E39EA008C3A20 /* SimpleGauge.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		342338AC169E39EA008C3A20 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = PB;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = ParallelBoxes;
+			};
+			buildConfigurationList = 342338AF169E39EA008C3A20 /* Build configuration list for PBXProject "SimpleGauge" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 342338AA169E39EA008C3A20;
+			productRefGroup = 342338B6169E39EA008C3A20 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				342338B4169E39EA008C3A20 /* SimpleGauge */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		342338B3169E39EA008C3A20 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				342338C4169E39EA008C3A20 /* InfoPlist.strings in Resources */,
+				342338CC169E39EA008C3A20 /* Default.png in Resources */,
+				342338CE169E39EA008C3A20 /* Default@2x.png in Resources */,
+				342338D0169E39EA008C3A20 /* Default-568h@2x.png in Resources */,
+				342338D6169E39EA008C3A20 /* PBViewController_iPhone.xib in Resources */,
+				342338D9169E39EA008C3A20 /* PBViewController_iPad.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		342338B1169E39EA008C3A20 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				342338C6169E39EA008C3A20 /* main.m in Sources */,
+				342338CA169E39EA008C3A20 /* PBAppDelegate.m in Sources */,
+				342338D3169E39EA008C3A20 /* PBViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		342338C2169E39EA008C3A20 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				342338C3169E39EA008C3A20 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		342338D4169E39EA008C3A20 /* PBViewController_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				342338D5169E39EA008C3A20 /* en */,
+			);
+			name = PBViewController_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		342338D7169E39EA008C3A20 /* PBViewController_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				342338D8169E39EA008C3A20 /* en */,
+			);
+			name = PBViewController_iPad.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		342338DA169E39EA008C3A20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		342338DB169E39EA008C3A20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		342338DD169E39EA008C3A20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SimpleGauge/SimpleGauge-Prefix.pch";
+				INFOPLIST_FILE = "SimpleGauge/SimpleGauge-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		342338DE169E39EA008C3A20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SimpleGauge/SimpleGauge-Prefix.pch";
+				INFOPLIST_FILE = "SimpleGauge/SimpleGauge-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		342338AF169E39EA008C3A20 /* Build configuration list for PBXProject "SimpleGauge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				342338DA169E39EA008C3A20 /* Debug */,
+				342338DB169E39EA008C3A20 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		342338DC169E39EA008C3A20 /* Build configuration list for PBXNativeTarget "SimpleGauge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				342338DD169E39EA008C3A20 /* Debug */,
+				342338DE169E39EA008C3A20 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 342338AC169E39EA008C3A20 /* Project object */;
+}
