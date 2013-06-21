@@ -12,13 +12,25 @@
 		342338BE169E39EA008C3A20 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 342338BD169E39EA008C3A20 /* CoreGraphics.framework */; };
 		342338C4169E39EA008C3A20 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 342338C2169E39EA008C3A20 /* InfoPlist.strings */; };
 		342338C6169E39EA008C3A20 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 342338C5169E39EA008C3A20 /* main.m */; };
-		342338CA169E39EA008C3A20 /* PBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 342338C9169E39EA008C3A20 /* PBAppDelegate.m */; };
+		342338CA169E39EA008C3A20 /* MSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 342338C9169E39EA008C3A20 /* MSAppDelegate.m */; };
 		342338CC169E39EA008C3A20 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 342338CB169E39EA008C3A20 /* Default.png */; };
 		342338CE169E39EA008C3A20 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 342338CD169E39EA008C3A20 /* Default@2x.png */; };
 		342338D0169E39EA008C3A20 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 342338CF169E39EA008C3A20 /* Default-568h@2x.png */; };
-		342338D3169E39EA008C3A20 /* PBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 342338D2169E39EA008C3A20 /* PBViewController.m */; };
-		342338D6169E39EA008C3A20 /* PBViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 342338D4169E39EA008C3A20 /* PBViewController_iPhone.xib */; };
-		342338D9169E39EA008C3A20 /* PBViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 342338D7169E39EA008C3A20 /* PBViewController_iPad.xib */; };
+		342338E1169E39F9008C3A20 /* MSSimpleGauge.m in Sources */ = {isa = PBXBuildFile; fileRef = 342338E0169E39F9008C3A20 /* MSSimpleGauge.m */; };
+		342338E4169F001B008C3A20 /* MSNeedleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 342338E3169F001B008C3A20 /* MSNeedleView.m */; };
+		342338EE169F2A22008C3A20 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 342338ED169F2A22008C3A20 /* QuartzCore.framework */; };
+		342338F516A312D4008C3A20 /* MSArcLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 342338F416A312D4008C3A20 /* MSArcLayer.m */; };
+		3423391116A5A18C008C3A20 /* MSGradientArcLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3423391016A5A18C008C3A20 /* MSGradientArcLayer.m */; };
+		3470E0D9177345A500772821 /* iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3470E0D8177345A500772821 /* iPhone.storyboard */; };
+		3470E0DD17734FC900772821 /* MSSimpleGaugeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3470E0DC17734FC900772821 /* MSSimpleGaugeViewController.m */; };
+		3470E0E017734FD900772821 /* MSRangeGaugeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3470E0DF17734FD900772821 /* MSRangeGaugeViewController.m */; };
+		3470E0E317734FE500772821 /* MSAnnotatedGaugeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3470E0E217734FE500772821 /* MSAnnotatedGaugeViewController.m */; };
+		3470E0E81774DE7900772821 /* MSGaugeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3470E0E71774DE7800772821 /* MSGaugeViewController.m */; };
+		3470E0EC1774E6B900772821 /* annotated.png in Resources */ = {isa = PBXBuildFile; fileRef = 3470E0E91774E6B900772821 /* annotated.png */; };
+		3470E0ED1774E6B900772821 /* range.png in Resources */ = {isa = PBXBuildFile; fileRef = 3470E0EA1774E6B900772821 /* range.png */; };
+		3470E0EE1774E6B900772821 /* simple.png in Resources */ = {isa = PBXBuildFile; fileRef = 3470E0EB1774E6B900772821 /* simple.png */; };
+		34BED3ED16AD81DD00034301 /* MSRangeGauge.m in Sources */ = {isa = PBXBuildFile; fileRef = 34BED3EC16AD81DD00034301 /* MSRangeGauge.m */; };
+		34E83E6E16B95D600041F046 /* MSAnnotatedGauge.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E83E6D16B95D600041F046 /* MSAnnotatedGauge.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,15 +42,38 @@
 		342338C3169E39EA008C3A20 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		342338C5169E39EA008C3A20 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		342338C7169E39EA008C3A20 /* SimpleGauge-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SimpleGauge-Prefix.pch"; sourceTree = "<group>"; };
-		342338C8169E39EA008C3A20 /* PBAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PBAppDelegate.h; sourceTree = "<group>"; };
-		342338C9169E39EA008C3A20 /* PBAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PBAppDelegate.m; sourceTree = "<group>"; };
+		342338C8169E39EA008C3A20 /* MSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSAppDelegate.h; sourceTree = "<group>"; };
+		342338C9169E39EA008C3A20 /* MSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSAppDelegate.m; sourceTree = "<group>"; };
 		342338CB169E39EA008C3A20 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		342338CD169E39EA008C3A20 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		342338CF169E39EA008C3A20 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		342338D1169E39EA008C3A20 /* PBViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PBViewController.h; sourceTree = "<group>"; };
-		342338D2169E39EA008C3A20 /* PBViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PBViewController.m; sourceTree = "<group>"; };
-		342338D5169E39EA008C3A20 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/PBViewController_iPhone.xib; sourceTree = "<group>"; };
-		342338D8169E39EA008C3A20 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/PBViewController_iPad.xib; sourceTree = "<group>"; };
+		342338DF169E39F9008C3A20 /* MSSimpleGauge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSSimpleGauge.h; sourceTree = "<group>"; };
+		342338E0169E39F9008C3A20 /* MSSimpleGauge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSSimpleGauge.m; sourceTree = "<group>"; };
+		342338E2169F001B008C3A20 /* MSNeedleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSNeedleView.h; sourceTree = "<group>"; };
+		342338E3169F001B008C3A20 /* MSNeedleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSNeedleView.m; sourceTree = "<group>"; };
+		342338ED169F2A22008C3A20 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		342338F316A312D4008C3A20 /* MSArcLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSArcLayer.h; sourceTree = "<group>"; };
+		342338F416A312D4008C3A20 /* MSArcLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSArcLayer.m; sourceTree = "<group>"; };
+		3423390F16A5A18C008C3A20 /* MSGradientArcLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSGradientArcLayer.h; sourceTree = "<group>"; };
+		3423391016A5A18C008C3A20 /* MSGradientArcLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSGradientArcLayer.m; sourceTree = "<group>"; };
+		3423391416A5A1BF008C3A20 /* MSArcLayerSubclass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSArcLayerSubclass.h; sourceTree = "<group>"; };
+		3470E0D8177345A500772821 /* iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = iPhone.storyboard; sourceTree = "<group>"; };
+		3470E0DB17734FC900772821 /* MSSimpleGaugeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSSimpleGaugeViewController.h; sourceTree = "<group>"; };
+		3470E0DC17734FC900772821 /* MSSimpleGaugeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSSimpleGaugeViewController.m; sourceTree = "<group>"; };
+		3470E0DE17734FD900772821 /* MSRangeGaugeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSRangeGaugeViewController.h; sourceTree = "<group>"; };
+		3470E0DF17734FD900772821 /* MSRangeGaugeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSRangeGaugeViewController.m; sourceTree = "<group>"; };
+		3470E0E117734FE500772821 /* MSAnnotatedGaugeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSAnnotatedGaugeViewController.h; sourceTree = "<group>"; };
+		3470E0E217734FE500772821 /* MSAnnotatedGaugeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSAnnotatedGaugeViewController.m; sourceTree = "<group>"; };
+		3470E0E61774DE7800772821 /* MSGaugeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSGaugeViewController.h; sourceTree = "<group>"; };
+		3470E0E71774DE7800772821 /* MSGaugeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSGaugeViewController.m; sourceTree = "<group>"; };
+		3470E0E91774E6B900772821 /* annotated.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = annotated.png; sourceTree = "<group>"; };
+		3470E0EA1774E6B900772821 /* range.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = range.png; sourceTree = "<group>"; };
+		3470E0EB1774E6B900772821 /* simple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = simple.png; sourceTree = "<group>"; };
+		34BED3EB16AD81DD00034301 /* MSRangeGauge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSRangeGauge.h; sourceTree = "<group>"; };
+		34BED3EC16AD81DD00034301 /* MSRangeGauge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSRangeGauge.m; sourceTree = "<group>"; };
+		34BED3EF16AD824D00034301 /* MSSimpleGaugeSubclass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSSimpleGaugeSubclass.h; sourceTree = "<group>"; };
+		34E83E6C16B95D600041F046 /* MSAnnotatedGauge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSAnnotatedGauge.h; sourceTree = "<group>"; };
+		34E83E6D16B95D600041F046 /* MSAnnotatedGauge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSAnnotatedGauge.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				342338EE169F2A22008C3A20 /* QuartzCore.framework in Frameworks */,
 				342338BA169E39EA008C3A20 /* UIKit.framework in Frameworks */,
 				342338BC169E39EA008C3A20 /* Foundation.framework in Frameworks */,
 				342338BE169E39EA008C3A20 /* CoreGraphics.framework in Frameworks */,
@@ -75,6 +111,7 @@
 		342338B8169E39EA008C3A20 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				342338ED169F2A22008C3A20 /* QuartzCore.framework */,
 				342338B9169E39EA008C3A20 /* UIKit.framework */,
 				342338BB169E39EA008C3A20 /* Foundation.framework */,
 				342338BD169E39EA008C3A20 /* CoreGraphics.framework */,
@@ -85,12 +122,10 @@
 		342338BF169E39EA008C3A20 /* SimpleGauge */ = {
 			isa = PBXGroup;
 			children = (
-				342338C8169E39EA008C3A20 /* PBAppDelegate.h */,
-				342338C9169E39EA008C3A20 /* PBAppDelegate.m */,
-				342338D1169E39EA008C3A20 /* PBViewController.h */,
-				342338D2169E39EA008C3A20 /* PBViewController.m */,
-				342338D4169E39EA008C3A20 /* PBViewController_iPhone.xib */,
-				342338D7169E39EA008C3A20 /* PBViewController_iPad.xib */,
+				342338C8169E39EA008C3A20 /* MSAppDelegate.h */,
+				342338C9169E39EA008C3A20 /* MSAppDelegate.m */,
+				3470E0DA17734FA900772821 /* DemoViewControllers */,
+				3470E0E41773538600772821 /* Gauges */,
 				342338C0169E39EA008C3A20 /* Supporting Files */,
 			);
 			path = SimpleGauge;
@@ -99,6 +134,7 @@
 		342338C0169E39EA008C3A20 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				3470E0F01774E6C600772821 /* images */,
 				342338C1169E39EA008C3A20 /* SimpleGauge-Info.plist */,
 				342338C2169E39EA008C3A20 /* InfoPlist.strings */,
 				342338C5169E39EA008C3A20 /* main.m */,
@@ -108,6 +144,69 @@
 				342338CF169E39EA008C3A20 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3423391316A5A194008C3A20 /* Arc Layers */ = {
+			isa = PBXGroup;
+			children = (
+				342338F316A312D4008C3A20 /* MSArcLayer.h */,
+				342338F416A312D4008C3A20 /* MSArcLayer.m */,
+				3423391416A5A1BF008C3A20 /* MSArcLayerSubclass.h */,
+				3423390F16A5A18C008C3A20 /* MSGradientArcLayer.h */,
+				3423391016A5A18C008C3A20 /* MSGradientArcLayer.m */,
+			);
+			name = "Arc Layers";
+			sourceTree = "<group>";
+		};
+		3470E0DA17734FA900772821 /* DemoViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				3470E0E61774DE7800772821 /* MSGaugeViewController.h */,
+				3470E0E71774DE7800772821 /* MSGaugeViewController.m */,
+				3470E0DB17734FC900772821 /* MSSimpleGaugeViewController.h */,
+				3470E0DC17734FC900772821 /* MSSimpleGaugeViewController.m */,
+				3470E0DE17734FD900772821 /* MSRangeGaugeViewController.h */,
+				3470E0DF17734FD900772821 /* MSRangeGaugeViewController.m */,
+				3470E0E117734FE500772821 /* MSAnnotatedGaugeViewController.h */,
+				3470E0E217734FE500772821 /* MSAnnotatedGaugeViewController.m */,
+				3470E0D8177345A500772821 /* iPhone.storyboard */,
+			);
+			name = DemoViewControllers;
+			sourceTree = "<group>";
+		};
+		3470E0E41773538600772821 /* Gauges */ = {
+			isa = PBXGroup;
+			children = (
+				3470E0E51773539900772821 /* Support Classes */,
+				34BED3EF16AD824D00034301 /* MSSimpleGaugeSubclass.h */,
+				342338DF169E39F9008C3A20 /* MSSimpleGauge.h */,
+				342338E0169E39F9008C3A20 /* MSSimpleGauge.m */,
+				34BED3EB16AD81DD00034301 /* MSRangeGauge.h */,
+				34BED3EC16AD81DD00034301 /* MSRangeGauge.m */,
+				34E83E6C16B95D600041F046 /* MSAnnotatedGauge.h */,
+				34E83E6D16B95D600041F046 /* MSAnnotatedGauge.m */,
+			);
+			name = Gauges;
+			sourceTree = "<group>";
+		};
+		3470E0E51773539900772821 /* Support Classes */ = {
+			isa = PBXGroup;
+			children = (
+				3423391316A5A194008C3A20 /* Arc Layers */,
+				342338E2169F001B008C3A20 /* MSNeedleView.h */,
+				342338E3169F001B008C3A20 /* MSNeedleView.m */,
+			);
+			name = "Support Classes";
+			sourceTree = "<group>";
+		};
+		3470E0F01774E6C600772821 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				3470E0E91774E6B900772821 /* annotated.png */,
+				3470E0EA1774E6B900772821 /* range.png */,
+				3470E0EB1774E6B900772821 /* simple.png */,
+			);
+			name = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,8 +265,10 @@
 				342338CC169E39EA008C3A20 /* Default.png in Resources */,
 				342338CE169E39EA008C3A20 /* Default@2x.png in Resources */,
 				342338D0169E39EA008C3A20 /* Default-568h@2x.png in Resources */,
-				342338D6169E39EA008C3A20 /* PBViewController_iPhone.xib in Resources */,
-				342338D9169E39EA008C3A20 /* PBViewController_iPad.xib in Resources */,
+				3470E0D9177345A500772821 /* iPhone.storyboard in Resources */,
+				3470E0EC1774E6B900772821 /* annotated.png in Resources */,
+				3470E0ED1774E6B900772821 /* range.png in Resources */,
+				3470E0EE1774E6B900772821 /* simple.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -179,8 +280,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				342338C6169E39EA008C3A20 /* main.m in Sources */,
-				342338CA169E39EA008C3A20 /* PBAppDelegate.m in Sources */,
-				342338D3169E39EA008C3A20 /* PBViewController.m in Sources */,
+				342338CA169E39EA008C3A20 /* MSAppDelegate.m in Sources */,
+				342338E1169E39F9008C3A20 /* MSSimpleGauge.m in Sources */,
+				342338E4169F001B008C3A20 /* MSNeedleView.m in Sources */,
+				342338F516A312D4008C3A20 /* MSArcLayer.m in Sources */,
+				3423391116A5A18C008C3A20 /* MSGradientArcLayer.m in Sources */,
+				34BED3ED16AD81DD00034301 /* MSRangeGauge.m in Sources */,
+				34E83E6E16B95D600041F046 /* MSAnnotatedGauge.m in Sources */,
+				3470E0DD17734FC900772821 /* MSSimpleGaugeViewController.m in Sources */,
+				3470E0E017734FD900772821 /* MSRangeGaugeViewController.m in Sources */,
+				3470E0E317734FE500772821 /* MSAnnotatedGaugeViewController.m in Sources */,
+				3470E0E81774DE7900772821 /* MSGaugeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -193,22 +303,6 @@
 				342338C3169E39EA008C3A20 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		342338D4169E39EA008C3A20 /* PBViewController_iPhone.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				342338D5169E39EA008C3A20 /* en */,
-			);
-			name = PBViewController_iPhone.xib;
-			sourceTree = "<group>";
-		};
-		342338D7169E39EA008C3A20 /* PBViewController_iPad.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				342338D8169E39EA008C3A20 /* en */,
-			);
-			name = PBViewController_iPad.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -307,6 +401,7 @@
 				342338DE169E39EA008C3A20 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
