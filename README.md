@@ -11,8 +11,13 @@ See the demo application for some examples on how the to use the gauges.
 
 ## Examples
 
+Simple Gauge
 
+# ![Screenshot](https://raw.github.com/sabymike/MSSimpleGauge/master/SimpleGauge/simple.png)
 
+# ![Screenshot](https://raw.github.com/sabymike/MSSimpleGauge/master/SimpleGauge/range.png)
+
+# ![Screenshot](https://raw.github.com/sabymike/MSSimpleGauge/master/SimpleGauge/annotated.png)
 
 ## Authors
 
