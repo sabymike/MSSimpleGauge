@@ -29,6 +29,8 @@
 		3470E0EC1774E6B900772821 /* annotated.png in Resources */ = {isa = PBXBuildFile; fileRef = 3470E0E91774E6B900772821 /* annotated.png */; };
 		3470E0ED1774E6B900772821 /* range.png in Resources */ = {isa = PBXBuildFile; fileRef = 3470E0EA1774E6B900772821 /* range.png */; };
 		3470E0EE1774E6B900772821 /* simple.png in Resources */ = {isa = PBXBuildFile; fileRef = 3470E0EB1774E6B900772821 /* simple.png */; };
+		347CB51C1775EFB2009F5D52 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 347CB51A1775EFB2009F5D52 /* LICENSE.txt */; };
+		347CB51D1775EFB2009F5D52 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 347CB51B1775EFB2009F5D52 /* README.md */; };
 		34BED3ED16AD81DD00034301 /* MSRangeGauge.m in Sources */ = {isa = PBXBuildFile; fileRef = 34BED3EC16AD81DD00034301 /* MSRangeGauge.m */; };
 		34E83E6E16B95D600041F046 /* MSAnnotatedGauge.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E83E6D16B95D600041F046 /* MSAnnotatedGauge.m */; };
 /* End PBXBuildFile section */
@@ -69,6 +71,8 @@
 		3470E0E91774E6B900772821 /* annotated.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = annotated.png; sourceTree = "<group>"; };
 		3470E0EA1774E6B900772821 /* range.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = range.png; sourceTree = "<group>"; };
 		3470E0EB1774E6B900772821 /* simple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = simple.png; sourceTree = "<group>"; };
+		347CB51A1775EFB2009F5D52 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		347CB51B1775EFB2009F5D52 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		34BED3EB16AD81DD00034301 /* MSRangeGauge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSRangeGauge.h; sourceTree = "<group>"; };
 		34BED3EC16AD81DD00034301 /* MSRangeGauge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSRangeGauge.m; sourceTree = "<group>"; };
 		34BED3EF16AD824D00034301 /* MSSimpleGaugeSubclass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSSimpleGaugeSubclass.h; sourceTree = "<group>"; };
@@ -94,6 +98,8 @@
 		342338AA169E39EA008C3A20 = {
 			isa = PBXGroup;
 			children = (
+				347CB51A1775EFB2009F5D52 /* LICENSE.txt */,
+				347CB51B1775EFB2009F5D52 /* README.md */,
 				342338BF169E39EA008C3A20 /* SimpleGauge */,
 				342338B8169E39EA008C3A20 /* Frameworks */,
 				342338B6169E39EA008C3A20 /* Products */,
@@ -269,6 +275,8 @@
 				3470E0EC1774E6B900772821 /* annotated.png in Resources */,
 				3470E0ED1774E6B900772821 /* range.png in Resources */,
 				3470E0EE1774E6B900772821 /* simple.png in Resources */,
+				347CB51C1775EFB2009F5D52 /* LICENSE.txt in Resources */,
+				347CB51D1775EFB2009F5D52 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
