@@ -9,6 +9,17 @@ The gauges are built using Core Graphics and Core Animation and allow for a larg
 
 See the demo application for some examples on how the to use the gauges.
 
+## Installation
+
+MSSimpleGauge is available via CocoaPods. Just add the following to your Podfile.
+
+```
+platform :ios
+pod 'MSSimpleGauge'
+```
+
+Otherwise, download or clone the repository and copy the 'Gauges' directory into your project.
+
 ## Examples
 
 Simple Gauge
