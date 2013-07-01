@@ -81,7 +81,7 @@
     float duration = animated ? .5 : 0;
     [UIView animateWithDuration:duration
                           delay:0
-                        options:UIViewAnimationOptionCurveEaseOut  
+                        options:UIViewAnimationOptionCurveEaseOut|UIViewAnimationOptionBeginFromCurrentState
                      animations:^{
                          [self setValue:value forKey:key];
                      }
