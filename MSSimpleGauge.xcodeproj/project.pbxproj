@@ -33,6 +33,12 @@
 		347CB51D1775EFB2009F5D52 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 347CB51B1775EFB2009F5D52 /* README.md */; };
 		34BED3ED16AD81DD00034301 /* MSRangeGauge.m in Sources */ = {isa = PBXBuildFile; fileRef = 34BED3EC16AD81DD00034301 /* MSRangeGauge.m */; };
 		34E83E6E16B95D600041F046 /* MSAnnotatedGauge.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E83E6D16B95D600041F046 /* MSAnnotatedGauge.m */; };
+		4BB87D95178D2227002B7980 /* tab_bar_icon_annotated.png in Resources */ = {isa = PBXBuildFile; fileRef = 4BB87D93178D2227002B7980 /* tab_bar_icon_annotated.png */; };
+		4BB87D96178D2227002B7980 /* tab_bar_icon_annotated@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4BB87D94178D2227002B7980 /* tab_bar_icon_annotated@2x.png */; };
+		4BB87D9B178D24A2002B7980 /* tab_bar_icon_range.png in Resources */ = {isa = PBXBuildFile; fileRef = 4BB87D97178D24A1002B7980 /* tab_bar_icon_range.png */; };
+		4BB87D9C178D24A2002B7980 /* tab_bar_icon_range@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4BB87D98178D24A1002B7980 /* tab_bar_icon_range@2x.png */; };
+		4BB87D9D178D24A2002B7980 /* tab_bar_icon_simple.png in Resources */ = {isa = PBXBuildFile; fileRef = 4BB87D99178D24A1002B7980 /* tab_bar_icon_simple.png */; };
+		4BB87D9E178D24A2002B7980 /* tab_bar_icon_simple@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4BB87D9A178D24A2002B7980 /* tab_bar_icon_simple@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -78,6 +84,12 @@
 		34BED3EF16AD824D00034301 /* MSSimpleGaugeSubclass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MSSimpleGaugeSubclass.h; path = Gauges/MSSimpleGaugeSubclass.h; sourceTree = "<group>"; };
 		34E83E6C16B95D600041F046 /* MSAnnotatedGauge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MSAnnotatedGauge.h; path = Gauges/MSAnnotatedGauge.h; sourceTree = "<group>"; };
 		34E83E6D16B95D600041F046 /* MSAnnotatedGauge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MSAnnotatedGauge.m; path = Gauges/MSAnnotatedGauge.m; sourceTree = "<group>"; };
+		4BB87D93178D2227002B7980 /* tab_bar_icon_annotated.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tab_bar_icon_annotated.png; sourceTree = "<group>"; };
+		4BB87D94178D2227002B7980 /* tab_bar_icon_annotated@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab_bar_icon_annotated@2x.png"; sourceTree = "<group>"; };
+		4BB87D97178D24A1002B7980 /* tab_bar_icon_range.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tab_bar_icon_range.png; sourceTree = "<group>"; };
+		4BB87D98178D24A1002B7980 /* tab_bar_icon_range@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab_bar_icon_range@2x.png"; sourceTree = "<group>"; };
+		4BB87D99178D24A1002B7980 /* tab_bar_icon_simple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tab_bar_icon_simple.png; sourceTree = "<group>"; };
+		4BB87D9A178D24A2002B7980 /* tab_bar_icon_simple@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab_bar_icon_simple@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +161,12 @@
 				342338CB169E39EA008C3A20 /* Default.png */,
 				342338CD169E39EA008C3A20 /* Default@2x.png */,
 				342338CF169E39EA008C3A20 /* Default-568h@2x.png */,
+				4BB87D97178D24A1002B7980 /* tab_bar_icon_range.png */,
+				4BB87D98178D24A1002B7980 /* tab_bar_icon_range@2x.png */,
+				4BB87D99178D24A1002B7980 /* tab_bar_icon_simple.png */,
+				4BB87D9A178D24A2002B7980 /* tab_bar_icon_simple@2x.png */,
+				4BB87D93178D2227002B7980 /* tab_bar_icon_annotated.png */,
+				4BB87D94178D2227002B7980 /* tab_bar_icon_annotated@2x.png */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -278,6 +296,12 @@
 				3470E0EE1774E6B900772821 /* simple.png in Resources */,
 				347CB51C1775EFB2009F5D52 /* LICENSE.txt in Resources */,
 				347CB51D1775EFB2009F5D52 /* README.md in Resources */,
+				4BB87D95178D2227002B7980 /* tab_bar_icon_annotated.png in Resources */,
+				4BB87D96178D2227002B7980 /* tab_bar_icon_annotated@2x.png in Resources */,
+				4BB87D9B178D24A2002B7980 /* tab_bar_icon_range.png in Resources */,
+				4BB87D9C178D24A2002B7980 /* tab_bar_icon_range@2x.png in Resources */,
+				4BB87D9D178D24A2002B7980 /* tab_bar_icon_simple.png in Resources */,
+				4BB87D9E178D24A2002B7980 /* tab_bar_icon_simple@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

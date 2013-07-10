@@ -72,7 +72,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Annotated" id="l2q-NM-gWV"/>
+                    <tabBarItem key="tabBarItem" title="Annotated" image="tab_bar_icon_annotated.png" id="l2q-NM-gWV"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zyo-Ug-Qqa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -157,7 +157,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Range" id="XhC-W4-Jcr"/>
+                    <tabBarItem key="tabBarItem" title="Range" image="tab_bar_icon_range.png" id="XhC-W4-Jcr"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="04e-hy-W7v" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -254,7 +254,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Simple" id="No9-aC-IGV"/>
+                    <tabBarItem key="tabBarItem" title="Simple" image="tab_bar_icon_simple.png" id="No9-aC-IGV"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QG8-eu-f11" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -282,6 +282,11 @@
             <point key="canvasLocation" x="-153" y="-667"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="tab_bar_icon_annotated.png" width="30" height="24"/>
+        <image name="tab_bar_icon_range.png" width="25" height="18"/>
+        <image name="tab_bar_icon_simple.png" width="25" height="17"/>
+    </resources>
     <classes>
         <class className="MSAnnotatedGaugeViewController" superclassName="MSGaugeViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/MSAnnotatedGaugeViewController.h"/>
