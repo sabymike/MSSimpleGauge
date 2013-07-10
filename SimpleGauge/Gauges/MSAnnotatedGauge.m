@@ -34,7 +34,9 @@
         _titleLabel.textAlignment = NSTextAlignmentCenter;
         _titleLabel.backgroundColor = [UIColor clearColor];
         _titleLabel.textColor = [UIColor lightGrayColor];
-        _titleLabel.translatesAutoresizingMaskIntoConstraints = NO;
+        if ([_titleLabel respondsToSelector:@selector(setTranslatesAutoresizingMaskIntoConstraints:)]) {
+            _titleLabel.translatesAutoresizingMaskIntoConstraints = NO;
+        }
         [self addSubview:_titleLabel];
        
         UILabel *valueLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, _titleLabel.frame.size.height, frame.size.width, 28)];
@@ -42,12 +44,20 @@
         _valueLabel.font = [UIFont boldSystemFontOfSize:32];
         _valueLabel.textAlignment = NSTextAlignmentCenter;
         _valueLabel.backgroundColor = [UIColor clearColor];
-        _valueLabel.translatesAutoresizingMaskIntoConstraints = NO;
+        if ([_valueLabel respondsToSelector:@selector(setTranslatesAutoresizingMaskIntoConstraints:)]) {
+            _valueLabel.translatesAutoresizingMaskIntoConstraints = NO;
+        }
         [self addSubview:_valueLabel];
        
-        NSDictionary *views = NSDictionaryOfVariableBindings(titleLabel, valueLabel);
-        NSArray *contraints = [NSLayoutConstraint constraintsWithVisualFormat:@"V:|-5-[titleLabel(==12)]-0-[valueLabel(==32)]" options:0 metrics:nil views:views];
-        [self addConstraints:contraints];
+        if ([NSLayoutConstraint class]) {
+            NSDictionary *views = NSDictionaryOfVariableBindings(titleLabel, valueLabel);
+            NSString *visualFormat = @"V:|-5-[titleLabel(==12)]-0-[valueLabel(==32)]";
+            NSArray *contraint = [NSLayoutConstraint constraintsWithVisualFormat:visualFormat
+                                                                         options:0
+                                                                         metrics:nil
+                                                                           views:views];
+            [self addConstraints:contraint];
+        }
       
         CGPoint innerArcStartPoint = [self.backgroundArcLayer pointForArcEdge:ArcEdgeInner andArcSide:ArcSideBegining];
         _startRangeLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, innerArcStartPoint.y+4, innerArcStartPoint.x, 14)];
