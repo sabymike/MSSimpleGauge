@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
   s.screenshots  = "https://raw.github.com/sabymike/MSSimpleGauge/master/SimpleGauge/simple.png", "https://raw.github.com/sabymike/MSSimpleGauge/master/SimpleGauge/range.png", "https://raw.github.com/sabymike/MSSimpleGauge/master/SimpleGauge/annotated.png"
   s.license      = 'MIT'
   s.author       = { "Mike Sabatini" => "mike@parallelboxes.com" }
-  s.source       = { :git => "https://github.com/paulz/MSSimpleGauge.git", :branch => "ios5" }
+  s.source       = { :git => "https://github.com/sabymike/MSSimpleGauge.git", :tag => '0.4' }
   s.platform     = :ios, '5.0'
   s.source_files = 'SimpleGauge/Gauges/*.{h,m}'
   s.frameworks = 'QuartzCore', 'UIKit', 'CoreGraphics', 'Foundation'
