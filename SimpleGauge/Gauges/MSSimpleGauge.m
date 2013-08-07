@@ -141,7 +141,7 @@
 
 - (float)angleForValue:(float)value
 {
-    float ratio = value / _maxValue;
+    float ratio = (value - _minValue) / (_maxValue - _minValue);
     float angle = _startAngle + ((_endAngle - _startAngle) * ratio);
     return angle;
 }
@@ -218,7 +218,8 @@
         // setting value below the min value set to min value
         value = value < _minValue ? _minValue : value;
         
-        float oldAngle = [self angleForValue:_value];
+        float oldValue = _value < _minValue ? _minValue : _value;
+        float oldAngle = [self angleForValue:oldValue];
         float newAngle = [self angleForValue:value];
         _value = value;
         
