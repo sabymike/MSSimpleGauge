@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "MSGaugeViewController.h"
 #import "MSSimpleGauge.h"
+#import "MSCircleGauge.h"
 
 @interface MSSimpleGaugeViewController : MSGaugeViewController
 @property (nonatomic) MSSimpleGauge *plainGauge;

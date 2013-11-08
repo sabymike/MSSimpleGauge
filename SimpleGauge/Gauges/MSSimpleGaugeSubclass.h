@@ -20,6 +20,8 @@
 @property (nonatomic) MSArcLayer *backgroundArcLayer;
 - (void)setup;
 - (void)setupArcLayers;
+- (CALayer*)createArcLayer;
+- (void)centerNeedleAtPoint:(CGPoint)point;
 - (float)angleForValue:(float)value;
 - (void)fillUpToAngle:(float)angle;
 - (void)setValue:(id)value forKey:(NSString *)key animated:(BOOL)animated;

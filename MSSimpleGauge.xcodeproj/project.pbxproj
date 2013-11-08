@@ -21,6 +21,8 @@
 		342338EE169F2A22008C3A20 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 342338ED169F2A22008C3A20 /* QuartzCore.framework */; };
 		342338F516A312D4008C3A20 /* MSArcLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 342338F416A312D4008C3A20 /* MSArcLayer.m */; };
 		3423391116A5A18C008C3A20 /* MSGradientArcLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3423391016A5A18C008C3A20 /* MSGradientArcLayer.m */; };
+		3466D367182D38DA005A211E /* MSCircleGauge.m in Sources */ = {isa = PBXBuildFile; fileRef = 3466D366182D38DA005A211E /* MSCircleGauge.m */; };
+		3466D36A182D3959005A211E /* MSCircleArcLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3466D369182D3959005A211E /* MSCircleArcLayer.m */; };
 		3470E0D9177345A500772821 /* iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3470E0D8177345A500772821 /* iPhone.storyboard */; };
 		3470E0DD17734FC900772821 /* MSSimpleGaugeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3470E0DC17734FC900772821 /* MSSimpleGaugeViewController.m */; };
 		3470E0E017734FD900772821 /* MSRangeGaugeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3470E0DF17734FD900772821 /* MSRangeGaugeViewController.m */; };
@@ -65,6 +67,10 @@
 		3423390F16A5A18C008C3A20 /* MSGradientArcLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MSGradientArcLayer.h; path = Gauges/MSGradientArcLayer.h; sourceTree = "<group>"; };
 		3423391016A5A18C008C3A20 /* MSGradientArcLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MSGradientArcLayer.m; path = Gauges/MSGradientArcLayer.m; sourceTree = "<group>"; };
 		3423391416A5A1BF008C3A20 /* MSArcLayerSubclass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MSArcLayerSubclass.h; path = Gauges/MSArcLayerSubclass.h; sourceTree = "<group>"; };
+		3466D365182D38DA005A211E /* MSCircleGauge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSCircleGauge.h; sourceTree = "<group>"; };
+		3466D366182D38DA005A211E /* MSCircleGauge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSCircleGauge.m; sourceTree = "<group>"; };
+		3466D368182D3959005A211E /* MSCircleArcLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSCircleArcLayer.h; sourceTree = "<group>"; };
+		3466D369182D3959005A211E /* MSCircleArcLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSCircleArcLayer.m; sourceTree = "<group>"; };
 		3470E0D8177345A500772821 /* iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = iPhone.storyboard; path = DemoViewControllers/iPhone.storyboard; sourceTree = "<group>"; };
 		3470E0DB17734FC900772821 /* MSSimpleGaugeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MSSimpleGaugeViewController.h; path = DemoViewControllers/MSSimpleGaugeViewController.h; sourceTree = "<group>"; };
 		3470E0DC17734FC900772821 /* MSSimpleGaugeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MSSimpleGaugeViewController.m; path = DemoViewControllers/MSSimpleGaugeViewController.m; sourceTree = "<group>"; };
@@ -179,6 +185,8 @@
 				3423391416A5A1BF008C3A20 /* MSArcLayerSubclass.h */,
 				3423390F16A5A18C008C3A20 /* MSGradientArcLayer.h */,
 				3423391016A5A18C008C3A20 /* MSGradientArcLayer.m */,
+				3466D368182D3959005A211E /* MSCircleArcLayer.h */,
+				3466D369182D3959005A211E /* MSCircleArcLayer.m */,
 			);
 			name = "Arc Layers";
 			sourceTree = "<group>";
@@ -210,6 +218,8 @@
 				34BED3EC16AD81DD00034301 /* MSRangeGauge.m */,
 				34E83E6C16B95D600041F046 /* MSAnnotatedGauge.h */,
 				34E83E6D16B95D600041F046 /* MSAnnotatedGauge.m */,
+				3466D365182D38DA005A211E /* MSCircleGauge.h */,
+				3466D366182D38DA005A211E /* MSCircleGauge.m */,
 			);
 			name = Gauges;
 			sourceTree = "<group>";
@@ -318,10 +328,12 @@
 				342338E4169F001B008C3A20 /* MSNeedleView.m in Sources */,
 				342338F516A312D4008C3A20 /* MSArcLayer.m in Sources */,
 				3423391116A5A18C008C3A20 /* MSGradientArcLayer.m in Sources */,
+				3466D36A182D3959005A211E /* MSCircleArcLayer.m in Sources */,
 				34BED3ED16AD81DD00034301 /* MSRangeGauge.m in Sources */,
 				34E83E6E16B95D600041F046 /* MSAnnotatedGauge.m in Sources */,
 				3470E0DD17734FC900772821 /* MSSimpleGaugeViewController.m in Sources */,
 				3470E0E017734FD900772821 /* MSRangeGaugeViewController.m in Sources */,
+				3466D367182D38DA005A211E /* MSCircleGauge.m in Sources */,
 				3470E0E317734FE500772821 /* MSAnnotatedGaugeViewController.m in Sources */,
 				3470E0E81774DE7900772821 /* MSGaugeViewController.m in Sources */,
 			);

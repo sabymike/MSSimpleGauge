@@ -18,16 +18,16 @@
 {
     [super viewDidLoad];
     
-    self.plainGauge = [[MSSimpleGauge alloc] initWithFrame:CGRectMake(0, 0, 150, 90)];
+    self.plainGauge = [[MSSimpleGauge alloc] initWithFrame:CGRectMake(0, 0, 150, 150)];
     self.plainGauge.value = 0;
     [self.view addSubview:self.plainGauge];
    
-    self.gradientGauge = [[MSSimpleGauge alloc] initWithFrame:CGRectMake(170, 0, 150, 90)];
+    self.gradientGauge = [[MSSimpleGauge alloc] initWithFrame:CGRectMake(170, 0, 150, 150)];
     self.gradientGauge.value = 0;
     self.gradientGauge.fillGradient = [MSGradientArcLayer defaultGradient];
     [self.view addSubview:self.gradientGauge];
     
-    self.minimalGauge = [[MSSimpleGauge alloc] initWithFrame:CGRectMake(0, 120, 150, 90)];
+    self.minimalGauge = [[MSSimpleGauge alloc] initWithFrame:CGRectMake(0, 220, 150, 150)];
     self.minimalGauge.value = 0;
     self.minimalGauge.backgroundArcFillColor = [UIColor whiteColor];
     self.minimalGauge.backgroundArcStrokeColor = [UIColor colorWithRed:0 green:0 blue:1 alpha:.4];
@@ -35,9 +35,9 @@
     self.minimalGauge.needleView.needleColor = [UIColor lightGrayColor];
     [self.view addSubview:self.minimalGauge];
     
-    self.bigGauge = [[MSSimpleGauge alloc] initWithFrame:CGRectMake(170, 120, 150, 90)];
-    self.bigGauge.startAngle = 0;
-    self.bigGauge.endAngle = 180;
+    self.bigGauge = [[MSCircleGauge alloc] initWithFrame:CGRectMake(170, 220, 150, 150)];
+    self.bigGauge.startAngle = -40;
+    self.bigGauge.endAngle = 220;
     self.bigGauge.value = 0;
     [self.view addSubview:self.bigGauge];
     

@@ -55,7 +55,7 @@
     self.backgroundColor = [UIColor whiteColor];
     
     _needleView.layer.anchorPoint = CGPointMake(.5, (height-(needleWidth/2))/height);
-    _needleView.center = CGPointMake(width/2, height-needleWidth/2);
+    [self centerNeedleAtPoint:CGPointMake(width/2, height)];
     [self rotateNeedleByAngle:-90+_startAngle];
     
     _containerLayer = [CALayer layer];
@@ -75,6 +75,17 @@
 }
 
 #pragma mark - Private / Protected
+- (void)centerNeedleAtPoint:(CGPoint)point
+{
+    CGFloat needleWidth = self.frame.size.width * NEEDLE_BASE_WIDTH_RATIO;
+    _needleView.center = CGPointMake(point.x, point.y-needleWidth/2);
+}
+
+- (CALayer*)createArcLayer
+{
+    return [MSGradientArcLayer layer];
+}
+
 - (void)setValue:(id)value forKey:(NSString *)key animated:(BOOL)animated
 {
     // half second duration or none depending on animated flag
@@ -99,7 +110,7 @@
 
 - (void)setupArcLayers
 {
-    _backgroundArcLayer = [MSGradientArcLayer layer];
+    _backgroundArcLayer = (MSGradientArcLayer*)[self createArcLayer];
     _backgroundArcLayer.strokeColor = _backgroundArcStrokeColor;
     _backgroundArcLayer.fillColor = _backgroundArcFillColor;
     _backgroundArcLayer.gradient = _backgroundGradient;
@@ -115,7 +126,7 @@
     }
     [_containerLayer addSublayer:_backgroundArcLayer];
     
-    _valueArcLayer = [MSGradientArcLayer layer];
+    _valueArcLayer = (MSGradientArcLayer*)[self createArcLayer];
     _valueArcLayer.strokeColor = _fillArcStrokeColor;
     _valueArcLayer.fillColor = _fillArcFillColor;
     _valueArcLayer.gradient = _fillGradient;
