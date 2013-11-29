@@ -64,6 +64,11 @@
     [self setupArcLayers];
 }
 
+- (void)awakeFromNib
+{
+    [self setup];
+}
+
 - (id)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
