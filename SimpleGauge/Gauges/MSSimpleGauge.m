@@ -59,7 +59,7 @@
     [self rotateNeedleByAngle:-90+_startAngle];
     
     _containerLayer = [CALayer layer];
-    _containerLayer.frame = CGRectMake(0, 0, width, height);
+    _containerLayer.frame = CGRectMake(0, 0, width, height-needleWidth/2);
     [self.layer insertSublayer:_containerLayer atIndex:0];
     [self setupArcLayers];
 }
