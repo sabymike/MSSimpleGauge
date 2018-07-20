@@ -89,40 +89,9 @@
 
 - (void)updateValueLabelAnimated:(BOOL)animated
 {
-    if ( animated )
-    {
-        [NSTimer scheduledTimerWithTimeInterval:.05
-                                         target:self
-                                       selector:@selector(incrementTimerFired:)
-                                       userInfo:nil
-                                        repeats:YES];
-    }
-    else
-    {
-        [self updateValueLabelWithValue:self.value];
-    }
+    [self updateValueLabelWithValue:self.value];
 }
-//
-//- (void)setValue:(float)value animated:(BOOL)animated
-//{
-//    [super setValue:value animated:animated];
-//    [self updateValueLabelAnimated:animated];
-//}
-//
-//- (void)incrementTimerFired:(NSTimer*)timer
-//{
-//    float currentLabelValue = _valueLabel.text.floatValue;
-//    if ( currentLabelValue == self.value )
-//    {
-//        [timer invalidate];
-//    }
-//    else
-//    {
-//        currentLabelValue++;
-//        [self updateValueLabelWithValue:currentLabelValue];
-//    }
-//}
-//
+
 - (void)updateValueLabelWithValue:(float)value
 {
     _valueLabel.text = [_valueFormatter stringFromNumber:@(value)];
